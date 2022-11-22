@@ -18,6 +18,14 @@
 
 //prompt length (more than 8 less than 128)
 //prompt char types to include (lowercase, uppercase, numeric, special numbers)
+var passwordEl = document.getElementById('password');
+var lengthEl;
+
+let length = prompt('Length of Password');
+length = +lengthEl;
+
+console.log(typeof length)
+
 
 //Getting random lower case letters using https://net-comber.com/charset.html
 function randLow(){
