@@ -12,10 +12,12 @@
       <header>
         <h1>Password Generator</h1>
       </header>
+
       <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
+
         <div class="card-body">
           <textarea
             readonly
@@ -24,11 +26,39 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
+
+        <div class="setting">
+          <h3>Password length</h3>
+            <input type="number" id="length" min='8' max='128' value='20' />
+        </div>
+
+        <div class="setting">
+          <h3>Include uppercase letters</h3> 
+            <input type="checkbox" id="uppercase" checked />
+        </div>
+
+        <div class="setting">
+          <h3>Include lowercase letters</h3> 
+            <input type="checkbox" id="lowercase" checked />
+        </div>
+
+        <div class="setting">
+          <h3>Include numbers</h3> 
+            <input type="checkbox" id="numbers" checked />
+        </div>
+
+        <div class="setting">
+          <h3>Include symbols</h3> 
+            <input type="checkbox" id="symbols" checked />
+        </div>
+      </div>
+
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
       </div>
     </div>
+    
     <script src="script.js"></script>
   </body>
 </html>
